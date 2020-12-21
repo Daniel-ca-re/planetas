@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include "planet.h"
 
 #include <QMainWindow>
 
@@ -10,6 +11,7 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+    QList <planet *> planets;
 
 public:
     MainWindow(QWidget *parent = nullptr);
