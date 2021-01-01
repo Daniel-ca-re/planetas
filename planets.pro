@@ -11,16 +11,24 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    planet.cpp
+    new_planet.cpp \
+    planet.cpp \
+    txtinfo.cpp
 
 HEADERS += \
     mainwindow.h \
-    planet.h
+    new_planet.h \
+    planet.h \
+    txtinfo.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    new_planet.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resouces.qrc
